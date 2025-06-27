@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme matching reference */
+    --background: 0 0% 100%; /* White background */
+    --foreground: 210 11% 15%; /* Dark text */
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 210 11% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+    --primary: 43 100% 51%; /* Yellow primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 11% 15%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 43 100% 51%; /* Yellow accent */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 43 100% 51%;
+    --chart-1: 43 100% 51%;
+    --chart-2: 33 100% 50%;
+    --chart-3: 173 58% 39%;
+    --chart-4: 197 37% 24%;
+    --chart-5: 43 74% 66%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 210 11% 15%; /* Dark background */
+    --foreground: 0 0% 100%; /* Light text */
+    --card: 215 28% 17%;
+    --card-foreground: 0 0% 100%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 43 100% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 10% 23%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 10% 23%;
+    --muted-foreground: 215 16% 77%;
+    --accent: 43 100% 51%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 43 100% 51%;
+    --chart-1: 43 100% 51%;
+    --chart-2: 33 100% 50%;
+    --chart-3: 173 58% 39%;
+    --chart-4: 197 37% 24%;
+    --chart-5: 43 74% 66%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-inter bg-light-bg text-text-dark text-lg md:text-xl;
+  }
+  
+  h1 {
+    @apply font-poppins text-5xl md:text-6xl font-extrabold leading-tight;
+  }
+  h2 {
+    @apply font-poppins text-4xl md:text-5xl font-bold leading-snug;
+  }
+  h3 {
+    @apply font-poppins text-3xl md:text-4xl font-bold leading-snug;
+  }
+  h4 {
+    @apply font-poppins text-2xl md:text-3xl font-semibold;
+  }
+  h5 {
+    @apply font-poppins text-xl md:text-2xl font-semibold;
+  }
+  h6 {
+    @apply font-poppins text-lg md:text-xl font-semibold;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-text-gray hover:text-primary-yellow transition-colors duration-200 font-medium;
+  }
+  
+  .nav-link.active {
+    @apply text-primary-yellow;
+  }
+}
+
+/* Hide Next.js badge and error messages */
+body > nextjs-portal {
+  display: none;
+}
+
+/* Custom Light/Dark Mode Styles */
+body.light-mode {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+    color: #1e293b;
+}
+body.light-mode .card-glow {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #1e293b;
+}
+body.light-mode nav {
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body.light-mode .text-gray-300 {
+    color: #64748b !important;
+}
+body.light-mode .text-gray-400 {
+    color: #94a3b8 !important;
+}
+body.light-mode .bg-gray-700 {
+    background-color: #e2e8f0 !important;
+}
+body.light-mode .border-gray-800 {
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+body.light-mode .shape {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+}
+body.light-mode #theme-toggle {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+body.light-mode #theme-toggle:hover {
+    background-color: #cbd5e1;
+}
+
+body.dark-mode {
+    /* Add your custom dark mode styles here if needed */
+}

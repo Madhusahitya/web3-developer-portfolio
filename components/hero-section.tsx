@@ -106,9 +106,12 @@ export default function HeroSection() {
               size="lg"
               variant="outline"
               className="border-2 border-primary-yellow text-primary-yellow hover:bg-primary-yellow hover:text-white px-8 py-3 rounded-full transition-all duration-300"
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              My Resume
+              <a href="/Madhu_Sahitya_Web3_Resume.pdf" target="_blank" rel="noopener noreferrer" download>
+                <Download className="mr-2 h-5 w-5" />
+                My Resume
+              </a>
             </Button>
           </motion.div>
         </motion.div>

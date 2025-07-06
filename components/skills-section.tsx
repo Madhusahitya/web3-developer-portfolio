@@ -12,7 +12,7 @@ export default function SkillsSection() {
     {
       title: "Programming Languages",
       icon: Code2,
-      skills: ["Rust", "Go", "Solidity", "TypeScript", "JavaScript", "Python"],
+      skills: ["Rust", "Go", "Solidity","Python"],
       color: "text-blue-600",
       bgColor: "bg-blue-100",
       borderColor: "border-blue-200",
@@ -20,7 +20,7 @@ export default function SkillsSection() {
     {
       title: "Blockchain & Web3",
       icon: Shield,
-      skills: ["Solana", "Ethereum", "Smart Contracts", "DeFi", "Cross-Chain", "Chainlink"],
+      skills: ["Solana", "Ethereum", "Smart Contracts", "DeFi", "Cross-Chain", "Chainlink","Ethers.js", "Web3.js", "Hardhat", "Truffle", "ERC-20", "ERC-721", "NFTs", "Consensus Mechanisms", "Cryptography", "Smart Contract Security", "Binance Smart Chain", "Metamask SDK","Cosmos SDK"],
       color: "text-primary-yellow",
       bgColor: "bg-primary-yellow/10",
       borderColor: "border-primary-yellow/20",
@@ -28,7 +28,7 @@ export default function SkillsSection() {
     {
       title: "Web Development",
       icon: Globe,
-      skills: ["React", "Next.js", "Node.js", "HTML/CSS", "Tailwind CSS", "REST APIs"],
+      skills: ["React", "Next.js", "Node.js", "HTML/CSS", "Tailwind CSS", "REST APIs","TypeScript", "JavaScript"],
       color: "text-green-600",
       bgColor: "bg-green-100",
       borderColor: "border-green-200",
@@ -44,7 +44,7 @@ export default function SkillsSection() {
     {
       title: "DevOps & Tools",
       icon: Wrench,
-      skills: ["Docker", "Kubernetes", "Git", "GitHub Actions", "AWS", "Google Cloud"],
+      skills: ["Docker", "Kubernetes", "Git","CI/CD", "Testnet/Mainnet Deployment", "GitHub Actions", "AWS", "Google Cloud"],
       color: "text-orange-600",
       bgColor: "bg-orange-100",
       borderColor: "border-orange-200",
@@ -69,8 +69,8 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold font-poppins mb-6 text-text-dark">
-            <span className="text-primary-yellow">Skills</span>
+          <h2 className="text-4xl sm:text-4xl font-bold font-poppins mb-6 text-text-dark">
+               Skills
           </h2>
           <p className="text-2xl text-text-gray max-w-3xl mx-auto">
             My technical stack and areas of expertise in blockchain and software development.

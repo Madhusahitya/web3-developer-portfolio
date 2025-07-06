@@ -14,29 +14,29 @@ export default function LearningSection() {
     {
       title: "Learn Everything About Solidity",
       platform: "RiseIn",
-      progress: 20,
-      status: "in-progress",
-      certificate: null,
+      progress: 100,
+      status: "completed",
+      certificate: "Certificates-Learn everything about Solidity-Madhu Sahitya Mangali.pdf",
     },
     {
       title: "Rust Programming for Smart Contracts",
       platform: "RiseIn", 
-      progress: 0,
-      status: "not-started",
+      progress: 85,
+      status: "in-progress",
       certificate: null,
     },
     {
       title: "Learn Everything About Solana",
       platform: "RiseIn",
-      progress: 0,
-      status: "not-started", 
+      progress: 90,
+      status: "in-progress", 
       certificate: null,
     },
     {
       title: "REST APIs with Go & Cloud Run",
       platform: "Google Cloud Skills Boost",
-      progress: 0,
-      status: "not-started",
+      progress: 100,
+      status: "in-progress",
       certificate: null,
     },
     {
@@ -47,10 +47,10 @@ export default function LearningSection() {
       certificate: "docker-cert.pdf",
     },
     {
-      title: "Go Basics",
+      title: "Go",
       platform: "Google Cloud Skills Boost",
-      progress: 0,
-      status: "not-started",
+      progress: 80,
+      status: "in-progress",
       certificate: null,
     },
   ];
@@ -78,7 +78,7 @@ export default function LearningSection() {
   };
 
   return (
-    <section id="learning" className="py-20 px-4 sm:px-6 lg:px-8 bg-light-bg">
+    <section id="learning" className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: 'white' }}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -87,9 +87,8 @@ export default function LearningSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold font-poppins mb-6 text-text-dark">
-            <span className="text-primary-yellow">Learning</span>{" "}
-            Journey
+          <h2 className="text-4xl sm:text-4xl font-bold font-poppins mb-6 text-text-dark">
+            Learning Journey
           </h2>
           <p className="text-2xl text-text-gray max-w-3xl mx-auto">
             Tracking my continuous learning journey in Web3 development, 
@@ -119,8 +118,11 @@ export default function LearningSection() {
                             size="sm" 
                             variant="outline"
                             className="h-8 border-green-500 text-green-600 hover:bg-green-50 p-2"
+                            asChild
                           >
+                            <a href={`/${course.certificate}`} download>
                             <Download className="w-3 h-3" />
+                            </a>
                           </Button>
                         )}
                         <Button 

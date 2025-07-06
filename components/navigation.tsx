@@ -11,25 +11,26 @@ export default function Navigation() {
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Project", href: "#projects" },
+    { name: "Blog", href: "#blog", highlight: false },
     { name: "Learning", href: "#learning" },
     { name: "More", href: "#", dropdown: true },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-light-bg/95 backdrop-blur-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-light-gray/95 backdrop-blur-sm border-b border-gray-100 py-4">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Navigation Links in one row */}
           <div className="flex items-center gap-10">
             <span className="text-2xl">😺</span>
-            <h1 className="text-2xl font-bold font-poppins text-primary-yellow">
+            <h1 className="text-xl font-bold font-poppins text-primary-yellow">
               sahitya.labs
             </h1>
             <div className="hidden md:flex items-center gap-8 ml-6">
               {navItems.map((item, index) =>
                 item.dropdown ? (
                   <div key={item.name} className="relative group">
-                    <a href={item.href} className="nav-link cursor-pointer">
+                    <a href={item.href} className="nav-link text-text-dark cursor-pointer">
                       {item.name} <span className="ml-1">▼</span>
                     </a>
                     <div className="absolute left-0 mt-2 w-32 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
@@ -41,18 +42,17 @@ export default function Navigation() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="nav-link"
+                    className={
+                      item.highlight
+                        ? "nav-link text-primary-yellow font-semibold hover:underline hover:text-primary-orange transition-colors"
+                        : "nav-link text-text-dark"
+                    }
                   >
                     {item.name}
                   </a>
                 )
               )}
             </div>
-          </div>
-
-          {/* Theme Toggle */}
-          <div className="flex items-center gap-4">
-            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
@@ -66,53 +66,5 @@ export default function Navigation() {
         </div>
       </div>
     </nav>
-  );
-}
-
-// ThemeToggle component
-function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-
-  // Set custom body class on theme change
-  useEffect(() => {
-    const body = document.body;
-    if (theme === "light") {
-      body.classList.add("light-mode");
-      body.classList.remove("dark-mode");
-    } else if (theme === "dark") {
-      body.classList.add("dark-mode");
-      body.classList.remove("light-mode");
-    } else {
-      // System: match prefers-color-scheme
-      const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      body.classList.toggle("dark-mode", isDark);
-      body.classList.toggle("light-mode", !isDark);
-    }
-  }, [theme]);
-
-  return (
-    <div className="flex gap-2 items-center border rounded-full px-2 py-1 bg-white/80 shadow-sm">
-      <button
-        aria-label="Light mode"
-        className={`p-1 rounded-full ${theme === "light" ? "bg-yellow-200" : ""}`}
-        onClick={() => setTheme("light")}
-      >
-        <span role="img" aria-label="Light">🌞</span>
-      </button>
-      <button
-        aria-label="Dark mode"
-        className={`p-1 rounded-full ${theme === "dark" ? "bg-gray-300" : ""}`}
-        onClick={() => setTheme("dark")}
-      >
-        <span role="img" aria-label="Dark">🌚</span>
-      </button>
-      <button
-        aria-label="System mode"
-        className={`p-1 rounded-full ${theme === "system" ? "bg-gray-200" : ""}`}
-        onClick={() => setTheme("system")}
-      >
-        <span role="img" aria-label="System">💻</span>
-      </button>
-    </div>
   );
 }

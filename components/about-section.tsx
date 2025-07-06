@@ -18,50 +18,39 @@ export default function AboutSection() {
       items: ["Rust", "Go", "Solidity", "TypeScript", "React"],
     },
     {
-      label: "Blockchain Ecosystems",
+      label: "Blockchain Ecosystems & Protocols",
       items: ["Solana", "Ethereum", "Polygon", "Chainlink"],
     },
   ];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-light-gray">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-light-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        {/* Centered About Heading */}
+        <h2 className="text-4xl sm:text-4xl font-bold font-poppins text-text-dark text-center mb-12">About</h2>
+        <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-stretch">
           {/* Left side - About content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="flex flex-col justify-between h-full space-y-8 bg-light-gray border border-gray-200 rounded-xl shadow-sm p-10"
           >
             <div className="space-y-6">
-              <h2 className="text-5xl sm:text-6xl font-bold font-poppins text-text-dark">
-                About{" "}
-                <span className="text-primary-yellow">Me</span>
-              </h2>
-              
-              <div className="space-y-4 text-2xl leading-relaxed">
+              <h3 className="text-3xl font-bold font-poppins text-text-dark mb-2">About me</h3>
+              <div className="space-y-4 text-xl leading-relaxed">
                 <p className="text-text-dark">
-                  I'm <span className="text-primary-yellow font-semibold">Madhu Sahitya</span> — a curious, 
-                  consistent, and impact-driven developer learning to build real-world solutions 
-                  using Web3 technologies.
+                I'm Madhu Sahitya — a 4th-year B.Tech Computer Science Engineering student specializing in Blockchain Technology, driven by a passion for building the future of Web3.
                 </p>
-                
-                <p className="text-text-gray">
-                  I build as I learn. From DeFi protocols to cross-chain infrastructure, 
-                  I believe in{" "}
-                  <span className="text-primary-orange font-semibold">working in public</span>, 
-                  staying accountable, and growing with the community.
+                <p className="text-text-dark">
+                My academic foundation is powerfully complemented by a hands-on philosophy: I build as I learn. This approach has led me to actively develop real-world solutions across DeFi protocols, cross-chain infrastructure, and secure smart contract development. I believe in working in public, staying accountable, and contributing meaningfully to the decentralized ecosystem.
                 </p>
-                
-                <p className="text-text-gray">
-                  My journey combines deep technical learning with practical implementation, 
-                  always aiming to contribute meaningful solutions to the decentralized ecosystem.
+                <p className="text-text-dark">
+                My journey combines deep technical learning with practical implementation, focusing on architecting robust, scalable, and secure decentralized applications. I am eager to translate this dedication and my growing expertise into impactful contributions within a leading blockchain organization.
                 </p>
               </div>
             </div>
-
           </motion.div>
 
           {/* Right side - Highlights cards */}
@@ -70,7 +59,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="flex flex-col justify-between h-full space-y-6 bg-light-gray border border-gray-200 rounded-xl shadow-sm p-8"
           >
             {highlights.map((highlight, index) => (
               <motion.div
@@ -80,8 +69,8 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.1 * index }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-white border border-gray-200 hover:border-primary-yellow/50 hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
+                <Card className="bg-transparent border-0 shadow-none">
+                  <CardContent className="p-0">
                     <h3 className="text-lg font-semibold text-text-dark mb-4">
                       {highlight.label}
                     </h3>
@@ -99,9 +88,7 @@ export default function AboutSection() {
                 </Card>
               </motion.div>
             ))}
-
             {/* Additional info cards */}
-            
           </motion.div>
         </div>
       </div>

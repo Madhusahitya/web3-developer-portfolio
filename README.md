@@ -1,17 +1,17 @@
 # Web3 Developer Portfolio
 
-A modern, animated, and responsive portfolio for Web3 developers. Built with **Next.js**, **Tailwind CSS**, and **Framer Motion**. Showcases your skills, projects, learning journey, and more with a beautiful UI and crypto-themed effects.
+A modern, animated, and responsive portfolio for Web3 developers. Built with **Next.js**, **Tailwind CSS**, and **Framer Motion**. Showcases your skills, projects, learning journey, and more with a beautiful UI.
 
 ## 🚀 Project Overview
 This portfolio is designed for Web3/blockchain developers to highlight their skills, projects, and continuous learning. It features:
-- Animated hero section with orbiting crypto icons
+- Animated hero section
 - Responsive design for all devices
 - Light and dark mode support (customizable)
 - Sections for About, Projects, Learning, Skills, and more
 - Easy to customize and extend
 
 ## ✨ Features
-- **Animated Hero Section**: Eye-catching profile with orbiting crypto icons (BTC, ETH, SOL)
+- **Animated Hero Section**: Eye-catching profile
 - **Modern Navigation**: Sticky topbar with theme toggle
 - **Projects & Skills**: Highlight your best work and tech stack
 - **Learning Journey**: Showcase your ongoing education
@@ -39,9 +39,9 @@ This portfolio is designed for Web3/blockchain developers to highlight their ski
    ```
 4. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-## 🖌️ Customization
+## 🎨 Customization
 - **Profile Image:** Replace `public/retouch1.png` with your own image.
-- **Hero Section:** Edit `components/hero-section.tsx` for your intro and orbit icons.
+- **Hero Section:** Edit `components/hero-section.tsx` for your intro.
 - **Projects, Skills, Learning:** Update the respective components in `components/`.
 - **Theme:** Adjust colors and backgrounds in `app/globals.css` and Tailwind config.
 

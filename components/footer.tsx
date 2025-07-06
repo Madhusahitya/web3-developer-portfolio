@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Send, Heart } from "lucide-react";
+import { Send, Heart, Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   console.log("Footer component rendered");
@@ -37,7 +37,12 @@ export default function Footer() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <form className="space-y-6">
+          <form 
+            action="https://formspree.io/f/xzzgqgjz" 
+            method="POST" 
+            className="space-y-6"
+          >
+            <input type="hidden" name="_subject" value="New submission from portfolio contact form" />
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-gray-300">
@@ -45,6 +50,7 @@ export default function Footer() {
                 </Label>
                 <Input
                   id="name"
+                  name="name"
                   placeholder="Enter your name"
                   className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-primary-yellow focus:ring-primary-yellow"
                 />
@@ -55,6 +61,7 @@ export default function Footer() {
                 </Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="Enter your email"
                   className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-primary-yellow focus:ring-primary-yellow"
@@ -68,6 +75,7 @@ export default function Footer() {
               </Label>
               <Textarea
                 id="message"
+                name="message"
                 placeholder="Tell me about your project, ideas, or just say hello..."
                 rows={6}
                 className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-primary-yellow focus:ring-primary-yellow resize-none"
@@ -87,14 +95,26 @@ export default function Footer() {
           </form>
         </motion.div>
 
-        {/* Copyright */}
+        {/* Social Media Icons + Copyright */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center gap-4"
+          className="mt-16 pt-8 border-t border-gray-700 flex flex-col items-center gap-4"
         >
+          {/* Social Media Icons */}
+          <div className="flex justify-center gap-4 mb-2">
+            <a href="https://github.com/Madhusahitya" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-700 hover:bg-primary-yellow transition-colors border border-gray-600 hover:border-primary-yellow">
+              <Github className="w-5 h-5 text-white" />
+            </a>
+            <a href="https://www.linkedin.com/in/madhu-sahitya-09432934b/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-700 hover:bg-primary-yellow transition-colors border border-gray-600 hover:border-primary-yellow">
+              <Linkedin className="w-5 h-5 text-white" />
+            </a>
+            <a href="https://twitter.com/sahiityaa" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-700 hover:bg-primary-yellow transition-colors border border-gray-600 hover:border-primary-yellow">
+              <Twitter className="w-5 h-5 text-white" />
+            </a>
+          </div>
           <p className="text-gray-400 text-sm">
             © 2024 Madhu Sahitya. Built with{" "}
             <Heart className="inline w-4 h-4 text-primary-yellow mx-1" />

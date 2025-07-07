@@ -87,10 +87,10 @@ export default function LearningSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-4xl font-bold font-poppins mb-6 text-text-dark">
+          <h2 className="text-2xl sm:text-2xl font-bold font-poppins mb-6 text-text-dark">
             Learning Journey
           </h2>
-          <p className="text-2xl text-text-gray max-w-3xl mx-auto">
+          <p className="text-lg text-text-gray max-w-3xl mx-auto">
             Tracking my continuous learning journey in Web3 development, 
             blockchain technologies, and modern development practices.
           </p>
@@ -135,7 +135,7 @@ export default function LearningSection() {
                       </div>
                     </div>
                     
-                    <CardTitle className="text-lg font-semibold text-text-dark leading-tight">
+                    <CardTitle className="text-sm font-semibold text-text-dark leading-tight">
                       {course.title}
                     </CardTitle>
                     

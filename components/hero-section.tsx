@@ -63,19 +63,19 @@ export default function HeroSection() {
             className="space-y-4"
           >
             
-            <h1 className="text-5xl sm:text-6xl lg:text-5xl font-bold font-poppins text-text-dark leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-3xl font-bold font-poppins text-text-dark leading-tight">
               Hey there, I'm 
             </h1>
             <h2>
-              <span className="text-primary-yellow font-semibold text-5xl tracking-wide">
+              <span className="text-primary-yellow font-semibold text-3xl tracking-wide">
                 Madhu Sahitya
               </span>
             </h2>
-            <h3 className="text-2xl text-text-gray max-w-2xl leading-relaxed">
+            <h3 className="text-lg text-text-gray max-w-2xl leading-relaxed">
               A Hands-On Web3 Developer focused on building Secure, Cross-Chain, and DeFi-centric applications.
             </h3>
             
-            <p className="text-2xl text-text-gray max-w-2xl leading-relaxed">
+            <p className="text-lg text-text-gray max-w-2xl leading-relaxed">
             I architect and develop robust decentralized solutions, leveraging expertise in Rust, Go, and Solidity. 
             My focus is on crafting scalable dApps, ensuring secure smart contract development, and building
             resilient decentralized infrastructure. I am driven by continuous learning and innovation in the Web3 

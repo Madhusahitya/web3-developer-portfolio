@@ -69,10 +69,10 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-4xl font-bold font-poppins mb-6 text-text-dark">
+          <h2 className="text-2xl sm:text-2xl font-bold font-poppins mb-6 text-text-dark">
                Skills
           </h2>
-          <p className="text-2xl text-text-gray max-w-3xl mx-auto">
+          <p className="text-lg text-text-gray max-w-3xl mx-auto">
             My technical stack and areas of expertise in blockchain and software development.
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ export default function SkillsSection() {
                       <div className={`p-3 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
                         <category.icon className={`w-6 h-6 ${category.color}`} />
                       </div>
-                      <h3 className="text-lg font-semibold text-text-dark">
+                      <h3 className="text-sm font-semibold text-text-dark">
                         {category.title}
                       </h3>
                     </div>

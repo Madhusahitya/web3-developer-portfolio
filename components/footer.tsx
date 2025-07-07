@@ -21,10 +21,10 @@ export default function Footer() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold font-poppins mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold font-poppins mb-6">
             <span className="text-primary-yellow">Contact</span> Me
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-400 text-xs max-w-2xl mx-auto">
             Let's connect and discuss opportunities in Web3 development, 
             collaboration, or just have a conversation about the future of decentralized technology.
           </p>
@@ -115,12 +115,12 @@ export default function Footer() {
               <Twitter className="w-5 h-5 text-white" />
             </a>
           </div>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-xs">
             © 2024 Madhu Sahitya. Built with{" "}
             <Heart className="inline w-4 h-4 text-primary-yellow mx-1" />
             and Next.js
           </p>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-xs">
             Open source • Building in public
           </p>
         </motion.div>

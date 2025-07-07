@@ -22,7 +22,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Navigation Links in one row */}
           <div className="flex items-center gap-10">
-            <span className="text-2xl">😺</span>
+            <span className="text-lg">😺</span>
             <h1 className="text-xl font-bold font-poppins text-primary-yellow">
               sahitya.labs
             </h1>
@@ -34,8 +34,8 @@ export default function Navigation() {
                       {item.name} <span className="ml-1">▼</span>
                     </a>
                     <div className="absolute left-0 mt-2 w-32 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                      <a href="/Madhu_Sahitya_Web3_Resume.pdf" target="_blank" rel="noopener noreferrer" download className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resume</a>
-                      <a href="#contact" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+                      <a href="/Madhu_Sahitya_Web3_Resume.pdf" target="_blank" rel="noopener noreferrer" download className="block px-4 py-2 text-xs text-gray-700 hover:bg-gray-100">Resume</a>
+                      <a href="#contact" className="block px-4 py-2 text-xs text-gray-700 hover:bg-gray-100">Contact</a>
                       
                     </div>
                   </div>

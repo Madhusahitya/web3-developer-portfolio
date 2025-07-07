@@ -57,10 +57,10 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-4xl font-bold font-poppins mb-6 text-text-dark">
+          <h2 className="text-2xl sm:text-2xl font-bold font-poppins mb-6 text-text-dark">
             <span className="text-text-dark">Projects</span>
           </h2>
-          <p className="text-2xl text-text-gray max-w-3xl mx-auto">
+          <p className="text-lg text-text-gray max-w-3xl mx-auto">
             Explore my hands-on projects in Web3, DeFi, and blockchain development.
           </p>
         </motion.div>
@@ -105,7 +105,7 @@ export default function ProjectsSection() {
 
                     <div className="space-y-4">
                       <div>
-                        <h4 className="text-sm font-semibold text-text-dark mb-2">Tech Stack</h4>
+                        <h4 className="text-xs font-semibold text-text-dark mb-2">Tech Stack</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.tags.map((tag) => (
                             <Badge
@@ -120,7 +120,7 @@ export default function ProjectsSection() {
                       </div>
 
                       <div>
-                        <h4 className="text-sm font-semibold text-text-dark mb-2">Status</h4>
+                        <h4 className="text-xs font-semibold text-text-dark mb-2">Status</h4>
                         <Badge className={getStatusColorClass(project.statusColor)}>
                           {project.status}
                         </Badge>
@@ -182,7 +182,7 @@ export default function ProjectsSection() {
 
                     <div className="space-y-4">
                       <div>
-                        <h4 className="text-sm font-semibold text-text-dark mb-2">Tech Stack</h4>
+                        <h4 className="text-xs font-semibold text-text-dark mb-2">Tech Stack</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.tags.map((tag) => (
                             <Badge
@@ -197,7 +197,7 @@ export default function ProjectsSection() {
                       </div>
 
                       <div>
-                        <h4 className="text-sm font-semibold text-text-dark mb-2">Status</h4>
+                        <h4 className="text-xs font-semibold text-text-dark mb-2">Status</h4>
                         <Badge className={getStatusColorClass(project.statusColor)}>
                           {project.status}
                         </Badge>

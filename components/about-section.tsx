@@ -27,7 +27,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-light-white">
       <div className="max-w-7xl mx-auto">
         {/* Centered About Heading */}
-        <h2 className="text-4xl sm:text-4xl font-bold font-poppins text-text-dark text-center mb-12">About</h2>
+        <h2 className="text-2xl sm:text-2xl font-bold font-poppins text-text-dark text-center mb-12">About</h2>
         <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-stretch">
           {/* Left side - About content */}
           <motion.div
@@ -38,7 +38,7 @@ export default function AboutSection() {
             className="flex flex-col justify-between h-full space-y-8 bg-light-gray border border-gray-200 rounded-xl shadow-sm p-10"
           >
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold font-poppins text-text-dark mb-2">About me</h3>
+              <h3 className="text-xl font-bold font-poppins text-text-dark mb-2">About me</h3>
               <div className="space-y-4 text-xl leading-relaxed">
                 <p className="text-text-dark">
                 I'm Madhu Sahitya — a 4th-year B.Tech Computer Science Engineering student specializing in Blockchain Technology, driven by a passion for building the future of Web3.
@@ -71,7 +71,7 @@ export default function AboutSection() {
               >
                 <Card className="bg-transparent border-0 shadow-none">
                   <CardContent className="p-0">
-                    <h3 className="text-lg font-semibold text-text-dark mb-4">
+                    <h3 className="text-sm font-semibold text-text-dark mb-4">
                       {highlight.label}
                     </h3>
                     <div className="flex flex-wrap gap-2">
